@@ -1,0 +1,14 @@
+doctype 5
+html
+  head
+    title Krish Dholakiya - Front-End Developer
+    link(href="/main.css", type='text/css', rel="stylesheet")
+    script(src="/bower_components/angular/angular.min.js")
+    script(src="/my.js")
+    //meta(name="viewport", content="initial-scale=1")
+  body(ng-app="profile")
+   != yield
+   footer
+     p
+      | &copy; 2013 Krish Dholakiya. Handcoded w/<a href="http://harpjs.com" target="_blank">Harp</a>, <a href="http://ionicons.com" target="_blank">Ionicons</a>, the <a href="http://behance.net" target="_blank">Behance API</a>, and <a href="http://angularjs.org" target="_blank">AngularJS</a>. 
+

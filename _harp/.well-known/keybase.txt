@@ -1,0 +1,66 @@
+==================================================================
+https://keybase.io/krrishd
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://krrishd.github.io
+  * I am krrishd (https://keybase.io/krrishd) on keybase.
+  * I have a public key with fingerprint 9BBF 10C1 0D9C 89AD C0CA  7062 8936 5571 C6F8 2966
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "9bbf10c10d9c89adc0ca706289365571c6f82966",
+            "host": "keybase.io",
+            "key_id": "89365571c6f82966",
+            "uid": "b16af356efd9f5b7387e58aa84022100",
+            "username": "krrishd"
+        },
+        "service": {
+            "hostname": "krrishd.github.io",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1396045447,
+    "expire_in": 157680000,
+    "prev": "19219cc7be5b50a0ae9be744ce4e0eb02d2fa3697dc5f4f86925861e61c29d2d",
+    "seqno": 3,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v0.1.1
+Comment: https://keybase.io/crypto
+
+yMHxAnicbZFfSBRbHMfXq2615taTJYbF9NLaYjOzM2dmFjTULvQHI5BtuVZuM2fO
+7A66M+vMrNd1VeQm14tJRjd6yUhqQUx60UofitQMy3+hXK2LVmwvgvdBYtF6EHTG
+6uFC5+Vwvr/P7/v9HX5j2ek2R1qp86z/yuJ+LW1yeD1qq6DX2+KYoIoxzBvHqtH2
+JclKEGkRTVYMzItxgiAROCRwkYMsx4sQhzyDA5LlPICmGQICiSU5ADA3FlJ1q8O0
+EXgdFcqqqZmPgCya6k/46HZBIAAveWiAJJGTaIHxsAyiWZ5nKZwkCRy3QB1pCh9G
+lrmmyXpIxJrcmCnWydAU49vJ/wcKg7IRigrfhohoqqFCtcYshwwjonutdiMWsfjf
+kRD47hQQZEU0P2921CFNl1UF8xImCQ3ZsiY8HMApmqIYN4bqI7KGArJF0AxgcfNY
+OajOtCQ4kuAgZARECzTO4zziBMRQFEQUwpGAkyIp8R7AMSKkJUpiAUfSLCAQICDJ
+iaRo5uuoVlExr8cckw+alrocVHgjqiGsaXT4YoYtzWGzZ/5irc/m2LX3x1ITlTs2
+fX+Uxop8Oa/jEfe9+ZMd5WUjQ6m1wfCvvtijvD97BxfuvJg7f+nxyOnrt+W7xfez
+nza8d636n0zr1UdnloF7+ioaWMt1DNATmxvH2iZhw1zL4Sryw6GPD840+xsmk+Pd
+gdWeWngjdyhV0JsMZ/3WraSP7x5t/7dloOlNp7O1u3qpr8T3uT+/eSx/auLmQscS
+/6WjvPHldH+xHYQT+uLf7c/KegqUrok9JSunMi7P19tnQ7WfssqWp655jZTzyD7X
+u/X5cxXOvucPs/Pc9plU0Vf8VgS2n3gb6qxaSP4361/bmXD1D9X0BVxTf7W+ynEl
+NvJWjh+80Fi5mvnPgWTXFpIKGaU=
+=boEs
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/krrishd
+
+==================================================================
+

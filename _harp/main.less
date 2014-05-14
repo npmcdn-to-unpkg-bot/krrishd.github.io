@@ -1,0 +1,257 @@
+@import "//fonts.googleapis.com/css?family=Lato:300,300italic";
+@import "//fonts.googleapis.com/css?family=Raleway:300";
+@import "/bower_components/ionicons/css/ionicons.min.css";
+@import "/bower_components/animate.css/animate.less";
+
+
+html { height:100%; }
+
+body {
+	font-family: Lato, sans-serif;
+	//background: url('/bg.JPG') fixed no-repeat;
+	h1, h2, h3, h4, h5 { font-family:Raleway, sans-serif; font-weight:300; }
+	height:100%;
+	overflow-x: hidden;
+	-webkit-overflow-scrolling: touch;
+	article {
+		width: 850px;
+		margin: 0 auto;
+	}
+	.title {
+		text-align:center;
+		//text-decoration: underline;
+	}
+	.icon {
+		margin-right: 15px;
+	}
+	.modal {
+		display: none;
+		height: 80%;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 100000;
+		background: rgba(0,0,0,.9);
+		width: 80%;
+		margin: 10px auto;
+		color: #fff;
+		//text-align: center;
+		left: 10%;
+		right: 10%;
+		padding: 20px;
+		border-radius: 3px;
+		box-shadow: 1px 1px 3px 1px rgba(0,0,0,.5);
+		border: 1px solid rgba(0,0,0,1);
+		overflow-y: scroll;
+		font-size: 1.2em;
+		.icon {
+			position: absolute;
+			top: 10px;
+			right: 5px;
+		}
+	}
+	input[type="text"], input[type="email"] {
+		display: block;
+		margin: 10px;
+		height: 30px;
+		width: 75%;
+		padding: 5px 10px;
+		border: 1px solid rgba(0,0,0,.1);
+		border-radius: 3px;
+	}
+	textarea {
+		padding: 5px 10px;
+		margin: 10px;
+		width: 75%;
+		height: 150px;
+		border-radius: 3px;
+		border: 1px solid rgba(0,0,0,.1);
+		font-family: sans-serif;
+	}
+	input[type="submit"] {
+		-webkit-appearance: none;
+		display: block;
+		margin: 10px;
+		padding: 5px 10px;
+		min-width: 30%;
+		height: 40px;
+		border-radius: 3px;
+		border: 1px solid rgba(0,0,0,.1);
+		cursor: pointer;
+		z-index: 100000;
+		background: rgba(255,255,255,.9);
+	}
+}
+
+::-webkit-scrollbar {
+	width: 12px;
+	color: white;
+}
+
+::-webkit-scrollbar-thumb {
+	background: white;
+	box-shadow: 1px 1px 10px 1px black;
+}
+
+::-webkit-scrollbar-track {
+	background: rgba(0,0,0,.9);
+}
+
+#main {
+	background: url('/bg.jpg') fixed no-repeat;
+	background-size:cover;
+	min-height: 100%;
+	position:relative;
+	top:-25px;
+	padding:20px;
+	color: #FFF;
+	width: 100%;
+	left: -50%;
+	margin-left: 49%;
+	header {
+		z-index: 99999;
+		width: 100%;
+		text-align: center;
+		position: fixed;
+		left: -50%;
+		margin-left: 50%;
+		top: -15px;
+		padding-top: 10px;
+		background: rgba(0,0,0,0.6);
+		h1 {
+			display: inline-block;
+		}
+	}
+	nav {
+		display:inline-block;
+		position: relative;
+		bottom: 9px;
+		left: 30px;
+		a {
+			color: inherit;
+			text-decoration:none;
+			padding-bottom:3px;
+			border-bottom:2px solid #FFF;
+			text-shadow: 1px 1px 3px #000;
+			margin: auto 10px;
+		}
+	}
+	.what {
+		margin: 0 auto;
+		max-width: 600px;
+		background: rgba(0,0,0,0.6);
+		padding: 10px 30px;
+		position: relative;
+		top: 71px;
+	}
+	.wh {
+		font-size: 3em;
+		text-shadow: 1px 1px 2px #000;
+		&:after {content: ".";}
+	}
+	.social {
+		margin: 0 auto;
+		text-align: center;
+		a {
+			text-decoration:none;
+			font-size: 4.7em;
+			color: white;
+			margin: auto 40px;
+		}
+	}
+}
+
+#about, .pageDef {
+	min-height: 105%;
+	background: #c0392b;
+	position: relative;
+	top: -25px;
+	padding: 45px 20px;
+	color: #FFF;
+	width: 100%;
+	left: -50%;
+	margin-left: 49%;
+	font-size: 2em;
+	line-height: 79px;
+	a {
+		color:inherit;
+		text-decoration:none;
+		padding-bottom:3px;
+		border-bottom:2px solid rgba(0,0,0,.2);
+	}
+	img[alt="profpic"] {
+		height: 100px;
+		width: 100px;
+		border-radius: 100%;
+		vertical-align: bottom;
+		margin: auto 10px;
+	}
+}
+
+#work {
+	.pageDef;
+	a { border-bottom:none; }
+	background: #2980b9;
+	#items {
+		margin: 0 auto;
+		text-align: center;
+		.item {
+			display: inline-block;
+			margin: 20px;
+			&:hover {
+				.animated;
+				.pulse;
+			}
+			img {
+				border-radius: 5px;
+				box-shadow: 1px 1px 3px 1px rgba(0,0,0,0.4);
+			}
+
+		}
+	}
+}
+#contact {
+	.pageDef;
+	background: #27ae60;
+	p {
+		line-height: 50px;
+		max-width: 800px;
+		margin: 0 auto;
+	}
+	ul {
+		max-width: 800px;
+		margin: 0 auto;
+		list-style-type:none;
+	}
+} 
+
+#thoughts {
+	.pageDef;
+	background: #2c3e50;
+	text-align: center;
+	.blog {
+		display: inline-block;
+		vertical-align: bottom;
+		max-width: 600px;
+		margin:0 15px;
+		text-align:left;
+		//font-size: 0.7em;
+		position: relative;
+		bottom: 15px;
+	}
+	.twitterWidget {
+		display: inline-block;
+		margin: 0 15px;
+	}
+}
+
+footer {
+	.pageDef;
+	padding:2px;
+	min-height:50px;
+	background:#8e44ad;
+	margin-left: 49%;
+	width:105%;
+	text-align: center;
+	//font-size:.7em;
+}
