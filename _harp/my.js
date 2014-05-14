@@ -11,14 +11,14 @@ window.onload = function() {
 		document.querySelector('.freelance').style.display = "block";
 	}
 	document.querySelector('.modal .icon').addEventListener('click', function(e) {
-		document.querySelector('.modal').style.display = "none";
+		document.querySelector('.modal').setAttribute('class', 'modal freelance animated fadeOut');
 		modalOpen = false;
 	});
 	document.onkeydown = function(evt) {
 		var ev = evt || window.event;
 		if (ev.keyCode == 27 && modalOpen == true) {
 			document.querySelector('.modal').setAttribute('class', 'modal freelance animated fadeOut');
-			document.querySelector('.modal').style.display = "none";
+			//document.querySelector('.modal').style.display = "none";
 			modalOpen = false;
 		}
 	}
