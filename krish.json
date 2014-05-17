@@ -13,14 +13,14 @@
 	"experience": {
 		"a": {
 			"company": "StudentLink",
-			"position": "Co-Founder/Front-End Developer",
+			"position": "Co-Founder",
 			"time": ["March 2014", "Present"],
 			"desc": "StudentLink is a project created at the GoCodeColorado (gocode.co) Denver Challenge. We managed to win the event, moving on the the top 10 finalists, 3 of which who will receive $25k from the government, plus the opportunity for $250k more in investment. My role in particular was to handle all of the data visualization, most notably our map (using Angular.js + Leaflet.js) which took a geocoded public dataset of business entities in Colorado and presented it in a format usable by job-seeking students, which was one of the factors that the judges noted as a reason for our victory."
 		},
 		"b": {
 			"company": "Globality",
 			"position": "Front-End Developer",
-			"time": ["January 2014", "Present"],
+			"time": ["January 2014", "May 2014"],
 			"desc": "As front-end developer, I was responsible for building the user interface of a social network analytics platform for entrepreneurs; this included working with mapping visualization with Leaflet.js, as well as the creation of other data visualizations with d3.js, all wrapped together with AngularJS"
 		},
 		"d": {
@@ -38,11 +38,11 @@
 		"e": {
 			"company": "TRHS School-Based Enterprise",
 			"position": "CTO (Chief Technology Officer)",
-			"time": ["May 2013", "Present"],
+			"time": ["May 2013", "May 2014"],
 			"desc": "As Chief Technology Officer, I am responsible for developing an eCommerce solution for the enterprise, allowing for sale of merchandise and other goods via online services, allowing fast payment from services such as Paypal, Google Checkout, and more (HTML5, CSS3, AngularJS) as well as management of software solutions such as POS systems, credit card machines, employee check-in application"
 		}
 	},
-	"skills": ["HTML5", "Jade", "CSS3", "LESS", "Sass", "JavaScript", "AngularJS", "jQuery", "Leaflet.js", "d3.js",  "Ionic Mobile Framework", "Node.js", "Express.js", "MongoDB", "Git DVCS", "Linux/Ubuntu/Debian"],
+	"skills": ["HTML5", "Jade", "CSS3", "LESS", "Sass", "JavaScript", "AngularJS", "jQuery", "Leaflet.js", "d3.js",  "Ionic Mobile Framework", "Node.js", "Express.js", "MongoDB", "Ruby", "Sinatra", "Rails", "Git DVCS", "Linux/Ubuntu/Debian"],
 	"education": {
 		"a": {
 			"name": "Startup Engineering (CS184)",
@@ -71,17 +71,12 @@
 			"name": "StudentLink",
 			"url": "http://getstudentlink.com",
 			"desc": "The winning project at GoCodeColorado Denver (http://gocode.co). My team and I built an application called StudentLink, eliminating/automating the recruiter in the process of connecting young student talent with growing small businesses in Colorado. My role in particular was the querying of two public data sets (Business Entities, Degrees Awarded), and mapping them using Leaflet.js to show businesses where students in a particular field were located, and to show students where businesses of a certain industry are located, which ended up being one of the primary points with which we managed to win the event. We will now continue on to the state-wide challenge and compete with the 10 best teams from the state for government funding"
-		},
-		"c": {
-			"name": "Teen2Geek",
-			"url": "http://teen2geek.com",
-			"desc": "Teen2Geek is an attempt to build a stronger adolescent-based developer community through aggregation of various learning resources for developers to expand their knowledge of programming, design, and development, a social news site similar to HN or Reddit to form a similar community solely of younger developers, that will be home to discussion, social bookmarking, and other community-moderated interaction, and a curated job board for remote and local internships for young developers to partake in"
 		}
 	},
 	"achievements": {
 		"a": {
 			"honor": "Winner - GoCodeColorado Denver Challenge Weekend",
-			"organization": "State of Colorado",
+			"organization": "State of Colorado/Secretary of State",
 			"year": "2014"
 		},
 		"b": {
@@ -110,5 +105,4 @@
 			"year": "2012"		
 		}
 	}
-
 }
