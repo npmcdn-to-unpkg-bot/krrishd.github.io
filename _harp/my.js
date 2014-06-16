@@ -48,6 +48,28 @@ app.factory('blogPosts',function($http){
   return _posts;
 });
 
-function blogCtrl(blogPosts,$scope) {
-  $scope.posts = blogPosts;
+function blogCtrl(blogPosts,$scope, $http) {
+  //$scope.posts = blogPosts;
+  $http.get('http://cors.io/tr-anonymous.appspot.com/medium.com/feed/@krrishd?v=' + Math.random()*100)
+	.success(function(data) {
+		$scope.posts = [];
+		var domParser = new DOMParser();
+		var parsedXML = domParser.parseFromString(data, 'text/xml');
+		var feed = rss2json(parsedXML);
+		for(item in feed.items) {
+			var rawDate = feed.items[item].pubDate.split(" ");
+			var itemDate = rawDate[1] + " " + rawDate[2] + " " + rawDate[3];
+			if(feed.items[item].title.search('"') > -1) {
+				var itemTitle = feed.items[item].title.split('"')[1];
+			} else {
+				var itemTitle = feed.items[item].title;
+			}
+			$scope.posts.push({
+				title: itemTitle,
+				url: feed.items[item].link,
+				date: itemDate
+			});
+			console.log($scope.posts);
+		}
+	});
 };
