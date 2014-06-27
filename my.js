@@ -1,4 +1,5 @@
 var app = angular.module('profile', []);
+var cors = 'http://cors-enabler.herokuapp.com/';
 
 window.onload = function() {
 	// IDC if user agent sniffing. ony gahd ken juhj ya
@@ -25,7 +26,7 @@ window.onload = function() {
 }
 
 function workCtrl($scope, $http) {
-	$http({method: 'GET', url: '//corsproxy.com/www.behance.net/v2/users/krishdholakiya/projects?api_key=iaLwUe7zM9AZDIsgsrq5rTRiRGR91vEZ'}).success(function(data) {
+	$http({method: 'GET', url: cors + 'www.behance.net/v2/users/krishdholakiya/projects?api_key=iaLwUe7zM9AZDIsgsrq5rTRiRGR91vEZ'}).success(function(data) {
 		$scope.work = data.projects;
 		//console.log($scope.work);
 		$scope.pulse = function() {
@@ -50,7 +51,7 @@ app.factory('blogPosts',function($http){
 
 function blogCtrl(blogPosts,$scope, $http) {
   //$scope.posts = blogPosts;
-  $http.get('http://corsproxy.com/tr-anonymous.appspot.com/medium.com/feed/@krrishd?v=' + Math.random()*100)
+  $http.get(cors + 'tr-anonymous.appspot.com/medium.com/feed/@krrishd?v=' + Math.random()*100)
 	.success(function(data) {
 		$scope.posts = [];
 		var domParser = new DOMParser();
