@@ -143,6 +143,7 @@ article p {
 	}
 	.what {
 		margin: 0 auto;
+		width: 75%;
 		max-width: 600px;
 		background: rgba(0,0,0,0.6);
 		padding: 10px 30px;
@@ -260,4 +261,18 @@ footer {
 	width:105%;
 	text-align: center;
 	//font-size:.7em;
+}
+
+
+@media (max-width: 625px) {
+	#main {
+		left: -55%;
+	}
+	header {
+		display:none !important;
+	}
+	.what {
+		top: 0px !important;
+		font-size: .7em !important;
+	}
 }

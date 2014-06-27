@@ -25,7 +25,7 @@ window.onload = function() {
 }
 
 function workCtrl($scope, $http) {
-	$http({method: 'GET', url: '//cors.io/www.behance.net/v2/users/krishdholakiya/projects?api_key=iaLwUe7zM9AZDIsgsrq5rTRiRGR91vEZ'}).success(function(data) {
+	$http({method: 'GET', url: '//corsproxy.com/www.behance.net/v2/users/krishdholakiya/projects?api_key=iaLwUe7zM9AZDIsgsrq5rTRiRGR91vEZ'}).success(function(data) {
 		$scope.work = data.projects;
 		//console.log($scope.work);
 		$scope.pulse = function() {
@@ -36,7 +36,7 @@ function workCtrl($scope, $http) {
 }
 app.factory('blogPosts',function($http){
   var _posts = [];
-  $http.get('//cors.io/www.itskrish.co/blog/api.json').success(function(data){
+  $http.get('//corsproxy.com/www.itskrish.co/blog/api.json').success(function(data){
     var blogData = data;
     var postKeys = Object.keys(blogData);
     for (var i = 0; i < 2; i++) {
@@ -50,7 +50,7 @@ app.factory('blogPosts',function($http){
 
 function blogCtrl(blogPosts,$scope, $http) {
   //$scope.posts = blogPosts;
-  $http.get('http://cors.io/tr-anonymous.appspot.com/medium.com/feed/@krrishd?v=' + Math.random()*100)
+  $http.get('http://corsproxy.com/tr-anonymous.appspot.com/medium.com/feed/@krrishd?v=' + Math.random()*100)
 	.success(function(data) {
 		$scope.posts = [];
 		var domParser = new DOMParser();
