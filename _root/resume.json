@@ -1,0 +1,114 @@
+{
+  "bio": {
+    "firstName": "Krish",
+    "lastName": "Dholakiya",
+    "email": {
+      "personal": "krishna.dholakiya@gmail.com"
+    },
+    "phone": {
+      "personal": "303-585-0332"
+    },
+    "summary": "Krish is a motivated web developer who is also interested in technology entrepreneurship. He's enthusiastic about the rapidly growing hackathon community, educational technology, as well as the Internet and what it's doing to the world as we know it.",
+    "location": {
+      "city": "Denver/Boulder",
+      "countryCode": "US",
+      "state": "Colorado"
+    },
+    "websites": {
+      "site": "http://itskrish.co",
+      "blog": "http://medium.com/@krrishd"
+    },
+    "profiles": {
+      "github": "krrishd",
+      "twitter": "krrishd"
+    }
+  },
+  "work": [
+    {
+      "company": "openSourceSchool",
+      "position": "Founder/Lead Developer",
+      "website": "http://openSourceSchool.co",
+      "startDate": "2013-12-00",
+      "endDate": "Present",
+      "summary": "As the technical founder, I'm responsible for handling all software development of our initial MVP offering, as well as bringing the platform to schools."
+    },
+    {
+      "company": "StudentRND",
+      "position": "Regional Manager - CodeDay",
+      "website": "http://studentrnd.org",
+      "startDate": "2014-08-00",
+      "endDate": "Present",
+      "summary": "As Regional Manager, I'm responsible for ensuring that everything from logistics and attendance to finances for the CodeDay Fall and Winter season are handled properly.",
+      "highlights": [
+        "Recruiting local organizers from high schools and colleges",
+        "Raising over $2,000 in sponsorships per season",
+        "Securing a venue in the city's hottest startups",
+        "Promoting the events via email, social media, and other marketing techniques"
+      ]
+    },
+    {
+      "company": "Globality",
+      "position": "Front-End Developer",
+      "website": "http://beglobality.com",
+      "startDate": "2013-12-00",
+      "endDate": "2014-05-00",
+      "summary": "As front-end developer, I primarily worked on wiring up the front-end user interface of the Globality dashboard with the backend",
+      "highlights": [
+	"Worked with D3.js and Leaflet.js to create intuitive data visualizations",
+	"Worked with Angular.js to connect to a REST API to power the dashboard"
+      ]
+    } 
+  ],
+  "education": [ 
+  {
+      "institution": "Arapahoe Community College",
+      "startDate": "2012",
+      "endDate": "2016",
+      "area": "Software Engineering/Business",
+      "studyType": "Concurrent Enrollment"
+  },
+  {
+      "institution": "ThunderRidge High School",
+      "startDate": "2012",
+      "endDate": "2016",
+      "area": "International Baccalaureate",
+      "studyType": "HS",
+      "courses": [
+        "International Baccalaureate",
+	"Advanced Placement",
+	"Startup Engineering - Stanford MOOC",
+	"Technology Entrepreneurship I & II - Stanford MOOC",
+	"CS50x - Harvard MOOC"
+      ]
+  } ],
+  "awards": [
+    {
+      "title": "Digital Compression Pioneer Award",
+      "date": "2014-11-01",
+      "awarder": "Techcrunch"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Languages",
+      "level": "Master",
+      "keywords": [
+        "HTML/Jade",
+        "CSS/LESS/Sass",
+        "Javascript",
+	"Ruby"
+      ]
+    },
+    {
+      "name": "Libraries/Frameworks",
+      "level": "Master",
+      "keywords": [
+        "Angular.js",
+	"D3.js",
+	"Leaflet.js",
+	"Express.js",
+	"Sails.js"
+      ]
+    }
+  ]
+}
