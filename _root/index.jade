@@ -1,0 +1,34 @@
+.primary
+	.top
+		.main
+			h1 Hi, I'm Krish Dholakiya.
+		.meta
+			.location
+				p
+					i.fa.fa-map-marker
+					| Denver/Boulder, CO
+			.job
+				p
+					| Founder @ 
+					a(href="http://opensourceschool.co") openSourceSchool
+	.bottom
+		.one.both
+			.main
+				h1 About Me
+			.content
+				p I'm a web developer and entrepreneur interested in hackathons and educational technology.
+				p I'm also:
+				ul.jobs
+					li
+						p Regional Manager @ 
+							a(href="http://studentrnd.org") StudentRND  
+					li
+						p Social Media Director @ 
+							a(href="http://deca.org") Colorado DECA
+		.two.both(ng-app="app", ng-controller="stuffCtrl")
+			.content
+				ul.stuff
+					li(ng-repeat="project in projects")
+						a(ng-href="{{ project.url }}")
+							img(ng-src="{{ project.covers['202'] }}")
+				a.btn(href="http://behance.net/krishdholakiya") See More
