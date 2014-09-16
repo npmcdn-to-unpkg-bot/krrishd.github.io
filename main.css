@@ -1,0 +1,86 @@
+@import "//fonts.googleapis.com/css?family=Lato:300";
+@import "//fonts.googleapis.com/css?family=Merriweather+Sans:300";
+@import "/lib/animate.css/animate.min.css";
+
+html { height: 100%; width: 100%; }
+
+body {
+	height: 100%;
+	width: 100%;
+	font-family: Merriweather Sans, sans-serif;
+	font-weight: 300;
+	color: #fff;
+	background: url('/img/bg.png');
+}
+
+h1, h2, h3 {
+	font-family: Lato, sans-serif;
+	font-weight: 300;
+}
+
+a {
+	text-decoration: none;
+	color: rgba(255,255,255,.6);
+}
+
+.hero {
+	background: url('/img/us.jpeg');
+	background-size: cover;
+	background-position: center center;
+	padding: 20px;
+	position: relative;
+	top: -10px;
+	left: -10px;
+	width: 100%;
+	height: 70%;
+}
+
+.item {
+	background: rgb(23,29,37);
+	width: 85%;
+	margin: 10px auto;
+	padding: 15px 30px;
+	border-radius: 5px;
+	box-shadow: 1px 1px 3px 1px rgba(0,0,0,.3);
+	border: 2px solid rgba(255,255,255,.7);
+	font-size: 1.3em;
+	max-width: 850px;
+}
+
+.main.item {
+	position: absolute;
+	bottom: 10px;
+	width: 50%;
+}
+
+.links ul {
+	text-align: center;
+	padding-left: 0px;
+}
+
+.links li {
+	display: inline-block;
+	margin: 10px;
+	padding: 10px;
+	border: 1px solid rgba(255,255,255,.4);
+	border-radius: 3px;
+	background: rgba(255,255,255,.8);
+	box-shadow: 1px 1px 3px 1px rgba(0,0,0,.2);
+}
+
+.links li a {
+	color: rgba(0,0,0,.8);
+}
+
+@media(max-width:700px) {
+	.item {
+		margin: 10px -5px;
+	}
+}
+
+@media(max-width:515px) {
+	.item {
+		font-size: 1em;
+		margin: 10px -15px;
+	}
+}
