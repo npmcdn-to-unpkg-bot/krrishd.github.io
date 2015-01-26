@@ -11,6 +11,7 @@ body {
 	font-weight: 300;
 	color: #fff;
 	background: url('/img/bg.png');
+	background-attachment: fixed;
 }
 
 h1, h2, h3 {
@@ -61,6 +62,9 @@ a {
 }
 
 .links li {
+	transition: .1s;
+	-webkit-transition: .1s;
+	-moz-transition: .1s;
 	display: inline-block;
 	margin: 10px;
 	padding: 10px;
@@ -68,10 +72,46 @@ a {
 	border-radius: 3px;
 	background: rgba(255,255,255,.8);
 	box-shadow: 1px 1px 3px 1px rgba(0,0,0,.2);
+	position: relative;
+	top: 0;
+}
+
+.links li:hover {
+	transition: .1s;
+	-webkit-transition: .1s;
+	-moz-transition: .1s;
+	position: relative;
+	top: 2px;
 }
 
 .links li a {
 	color: rgba(0,0,0,.8);
+}
+
+.work li {
+	list-style-type: none;
+	display: inline-block;
+	margin: 5px;
+}
+
+.work li img {
+	transition: .1s;
+	-webkit-transition: .1s;
+	-moz-transition: .1s;
+	border-radius: 3px;
+	border: 2px solid #fff;
+	box-shadow: inset 1px 1px 3px 1px rgba(0,0,0,.5);
+	position: relative;
+	top: 0px;
+}
+
+.work li img:hover {
+	transition: .2s;
+	-webkit-transition: .2s;
+	-moz-transition: .2s;
+	box-shadow: 1px 1px 3px 1px rgba(0,0,0,.6);
+	position:relative;
+	top: 2px;
 }
 
 @media(max-width:700px) {
