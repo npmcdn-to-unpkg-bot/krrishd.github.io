@@ -126,3 +126,9 @@ a {
 		margin: 10px -15px;
 	}
 }
+
+@media(max-width: 450px) {
+	.work li {
+		margin: 10px -30px !important;
+	}
+}
