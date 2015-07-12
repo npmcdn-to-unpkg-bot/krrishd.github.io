@@ -114,6 +114,10 @@ a {
 	top: 2px;
 }
 
+.loading.false {
+	display: none;
+}
+
 @media(max-width:700px) {
 	.item {
 		margin: 10px -5px;
@@ -132,3 +136,4 @@ a {
 		margin: 10px -30px !important;
 	}
 }
+
