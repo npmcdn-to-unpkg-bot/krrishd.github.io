@@ -23,7 +23,7 @@ var defaultState = {
   }
 }
 
-function generateProjectMetadata(behanceData) {
+/*function generateProjectMetadata(behanceData) {
   return {
     name: behanceData.name,
     fields: behanceData.fields,
@@ -57,7 +57,7 @@ function generateMetadataMarkup(projectMetadata) {
 
   return markupObject;
 }
-
+*/
 function camelize(str) {
   return str.replace(/(?:^\w|[A-Z]|\b\w)/g, function(letter, index) {
     return index == 0 ? letter.toLowerCase() : letter.toUpperCase();
@@ -108,7 +108,7 @@ window.onload = function() {
         document.querySelector('.work ul').appendChild(item);
         var appendedProject = document.querySelector('.' + uniqueStringId);
 
-        appendedProject.addEventListener('mouseover', function(e) {
+        /*appendedProject.addEventListener('mouseover', function(e) {
           state.projectMetadata = generateProjectMetadata(project);
         });
 
@@ -116,7 +116,7 @@ window.onload = function() {
           state.projectMetadata = {
             display: false
           };
-        });
+        });*/
 
       });
     }
