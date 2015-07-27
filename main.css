@@ -141,10 +141,10 @@ a {
 	display: none;
 }
 
-.work {
+/*.work {
 	display: inline-block;
 	width: 55%;
-}
+}*/
 
 .metadata.show {
 	transition: .5s;
