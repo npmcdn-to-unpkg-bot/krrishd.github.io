@@ -7,17 +7,18 @@ html { height: 100%; width: 100%; }
 body {
 	height: 100%;
 	width: 100%;
-	font-family: Merriweather Sans, sans-serif;
+	font-family: Merriweather Sans, Helvetica Neue, sans-serif;
 	font-weight: 300;
 	color: #fff;
+	background: #333333;
 	background: url('/img/bg.png');
 	background-attachment: fixed;
 }
 
-h1, h2, h3 {
+/*h1, h2, h3 {
 	font-family: Lato, sans-serif;
 	font-weight: 300;
-}
+}*/
 
 a {
 	text-decoration: none;
@@ -118,6 +119,56 @@ a {
 	display: none;
 }
 
+.main .text {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.main img {
+	display: inline-block;
+	width: 125px;
+	border-radius: 100%;
+	border: 2px solid #fff;
+	box-shadow: 1px 1px 3px 1px rgba(0,0,0,.2);
+	vertical-align: middle;
+	margin-right: 20px;
+}
+
+.metadata {
+	transition: .5s;
+	-webkit-transition: .5s;
+	-moz-transition: .5s;
+	display: none;
+}
+
+.work {
+	display: inline-block;
+	width: 55%;
+}
+
+.metadata.show {
+	transition: .5s;
+	-webkit-transition: .5s;
+	-moz-transition: .5s;
+  display: block;
+  padding: 10px;
+  background: rgba(0,0,0,.8);
+	border-radius: 5px;
+  border: 2px solid #fff;
+  box-shadow: 1px 1px 3px 1px rgba(0,0,0,.2);
+}
+
+.metadataContainer {
+	display: inline-block;
+	width: 25%;
+	max-height: 100px;
+}
+
+.workContainer {
+	width: 85%;
+	margin: 0 auto;
+}
+
 @media(max-width:700px) {
 	.item {
 		margin: 10px -5px;
@@ -136,4 +187,3 @@ a {
 		margin: 10px -30px !important;
 	}
 }
-

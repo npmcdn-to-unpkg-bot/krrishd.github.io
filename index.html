@@ -6,13 +6,17 @@
 		<meta name="description" content="Web Developer + Aspiring Entrepreneur">
 		<link href="/main.css" rel="stylesheet" type="text/css">
 		<script src="https://cdn.rawgit.com/krrishd/31f1c4140d4026c998e9/raw/1f9a7562709f3c5bd47bec756cde2e75982dfea5/http.js"></script>
+		<script src="https://rawgit.com/MaxArt2501/object-observe/master/dist/object-observe.min.js"></script>
 		<script src="/app.js"></script>
 	</head>
 	<body>
 		<div class="hero">
-			<div class="main item animated fadeIn">
-				<h1>Krish Dholakiya</h1>
-				<h3>Software Engineer + Aspiring Entrepreneur</h3>
+			<div class="main item">
+				<img src="/img/me.jpeg">
+				<div class="text">
+					<h1>Krish Dholakiya</h1>
+					<h3>Software Engineer + Aspiring Entrepreneur</h3>
+				</div>
 			</div>
 		</div>
 		<div class="bio item">
@@ -44,12 +48,18 @@
 				</li>
 			</ul>
 		</div>
-		<div class="work item">
-			<h2>Some Work</h2>
-			<div class="loading true">
-				<img src="/img/loading.gif">
+		<div class="workContainer">
+			<div class="work item">
+				<h2>Some Work</h2>
+				<div class="loading true">
+					<img class="animated fadeIn" src="/img/loading.gif">
+				</div>
+				<ul></ul>
 			</div>
-			<ul></ul>
+			<div class="metadataContainer item">
+				<div class="metadata show">
+				</div>
+			</div>
 		</div>
 		<div class="contact item">
 			<h2>Contact</h2>
