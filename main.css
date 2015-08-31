@@ -183,7 +183,13 @@ a {
 }
 
 @media(max-width: 450px) {
-	.work li {
-		margin: 10px -30px !important;
+	.work ul {
+		margin: 10px -45px !important;
+	}
+	.main {
+		font-size: 0.7em;
+	}
+	.main img {
+		width: 65px;
 	}
 }
