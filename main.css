@@ -169,6 +169,21 @@ a {
 	margin: 0 auto;
 }
 
+.facebookMessage {
+	background: #3b5998;
+	padding: 3px;
+	color: rgba(255,255,255,.9);
+	border-radius: 3px;
+	display: inline-block;
+	box-shadow: 1px 1px 3px 1px rgba(0,0,0,.1);
+	text-shadow: 1px 1px rgba(0,0,0,.2);
+	margin: 5px;
+}
+
+.bio ul {
+	line-height: 35px;
+}
+
 @media(max-width:700px) {
 	.item {
 		margin: 10px -5px;
