@@ -209,6 +209,6 @@ a {
 	}
 
 	.bio ul {
-		line-height: auto !important;
+		line-height: normal !important;
 	}
 }
