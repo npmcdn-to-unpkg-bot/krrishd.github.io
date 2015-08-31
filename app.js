@@ -71,16 +71,16 @@ window.onload = function() {
 				.setAttribute('class', 'loading ' + state.loading);
     } else if (e[0].name == 'projectMetadata') {
       if (state.projectMetadata.display) {
-        document.querySelector('.metadata')
-          .innerHTML = '';
-        document.querySelector('.metadata')
-					.setAttribute('class', 'metadata show animated fadeIn')
-        document.querySelector('.metadata')
-          .appendChild(generateMetadataMarkup(state.projectMetadata));
+        document.querySelector('.metadata') && (document.querySelector('.metadata')
+          .innerHTML = '');
+        document.querySelector('.metadata') && (document.querySelector('.metadata')
+					.setAttribute('class', 'metadata show animated fadeIn'))
+        document.querySelector('.metadata') && (document.querySelector('.metadata')
+          .appendChild(generateMetadataMarkup(state.projectMetadata)));
       } else {
         state.projectMetadata = defaultState.projectMetadata;
-        document.querySelector('.metadata')
-          .appendChild(generateMetadataMarkup(state.projectMetadata));
+        document.querySelector('.metadata') && (document.querySelector('.metadata')
+          .appendChild(generateMetadataMarkup(state.projectMetadata)));
       }
     }
   });
