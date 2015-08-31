@@ -207,4 +207,8 @@ a {
 	.main img {
 		width: 65px;
 	}
+
+	.bio ul {
+		line-height: auto !important;
+	}
 }
