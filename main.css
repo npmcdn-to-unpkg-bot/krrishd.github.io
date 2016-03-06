@@ -184,6 +184,10 @@ a {
 	line-height: 35px;
 }
 
+.bio > ul > li {
+    margin-bottom: 30px;
+}
+
 @media(max-width:700px) {
 	.item {
 		margin: 10px -5px;
