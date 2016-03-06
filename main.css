@@ -13,6 +13,7 @@ body {
 	background: #333333;
 	background: url('/img/bg.png');
 	background-attachment: fixed;
+	overflow-x: hidden;
 }
 
 /*h1, h2, h3 {
@@ -184,7 +185,8 @@ a {
 	line-height: 35px;
 }
 
-.resumeItems > li {
+.resumeItems
+ > li {
     margin-bottom: 30px;
 }
 
