@@ -7,12 +7,14 @@ html {
 	margin: 0 auto;
 	background-image: url('/img/bg.png');
 	background-attachment: fixed;
+	background-size: cover;
 }
 
 body {
 	font-family: San Francisco, sans-serif;
 	background-image: url('/img/bg.png');
 	background-attachment: fixed;
+	background-size: cover;
 	color: rgba(0,0,0,.8);
 	margin-top: 100px;
 	padding-bottom: 60px;
