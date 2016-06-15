@@ -238,5 +238,9 @@ nav li.true {
 	.aboutSection p {
 		width: 85%;
 	}
+
+	.titleSection {
+		position: relative;
+	}
 }
 
