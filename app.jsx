@@ -40,6 +40,12 @@ var PortfolioPage = React.createClass({
 						"desc": "A landing page. Built from scratch with HTML, CSS, and vanilla JavaScript."
 					},
 					{
+						"title":"Forward",
+						"url": "http://itskrish.co/resume",
+						"img": "/img/fwd.png",
+						"desc": "A real-estate transaction automation product. Worked across the stack (frontend, backend, devops)."
+					},
+					{
 						"title": "Helix",
 						"url": "https://www.behance.net/gallery/23068979/Helix",
 						"img": "https://mir-s3-cdn-cf.behance.net/project_modules/hd/bf702323068979.5631cc24e849b.png",
