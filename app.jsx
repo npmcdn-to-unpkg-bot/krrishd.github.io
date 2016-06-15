@@ -29,11 +29,32 @@ var PortfolioPage = React.createClass({
 	componentWillMount: function() {
 		this.getItems();
 	},
-	/*getInitialState: function() {
+	getInitialState: function() {
 		return {
-			items: []
+			items_raw: {
+				"data": [
+					{
+						"title": "Slice Capital",
+						"url": "http://www.slice.capital",
+						"img": "/img/slice.png",
+						"desc": "A landing page. Built from scratch with HTML, CSS, and vanilla JavaScript."
+					},
+					{
+						"title": "Helix",
+						"url": "https://www.behance.net/gallery/23068979/Helix",
+						"img": "https://mir-s3-cdn-cf.behance.net/project_modules/hd/bf702323068979.5631cc24e849b.png",
+						"desc": "A patient-doctor relationship management system. Built with Node.js for PennApps."
+					},
+					{
+						"title": "ossHack",
+						"url": "https://ossHack.github.io",
+						"img": "/img/osshack.png",
+						"desc": "A landing page. Built from scratch with HTML, LESS.css, and vanilla JavaScript."
+					}
+				]
+			}
 		}
-	},*/
+	},
 	getItems: function() {
 
 		var that = this;
@@ -44,26 +65,18 @@ var PortfolioPage = React.createClass({
 			return fixedUrl;
 		}
 
-		$.ajax({
-			url:'/portfolio.json',
-			async: false,
-			success: function(content) {
-				var items = content.data;
-				console.log(items);
-				items = items.map(function(it) {
-					return (
-						<PortfolioItem 
-							title={it.title}
-							img={it.img}
-							url={it.url}
-							shortened_url={shortenUrl(it.url)}
-							desc={it.desc}/>
-					);
-				});
-				that.setState({
-					items: items
-				});
-			}
+		var items = this.state.items_raw.data.map(function(it) {
+			return (
+				<PortfolioItem 
+					title={it.title}
+					img={it.img}
+					url={it.url}
+					shortened_url={shortenUrl(it.url)}
+					desc={it.desc}/>
+			);
+		});
+		that.setState({
+			items: items
 		});
 	},
 	render: function() {
