@@ -98,7 +98,7 @@ var PortfolioPage = React.createClass({
 var PortfolioItem = React.createClass({
 	render: function() {
 		return (
-			<div className="portfolioItem animated bounceInDown">
+			<div className="portfolioItem">
 				<img src={this.props.img} />
 				<div className="desc">
 					<h1>{this.props.title}</h1>
@@ -156,7 +156,7 @@ var AboutPage = React.createClass({
 var ContainerItem = React.createClass({
 	getInitialState: function() {
 		return {
-			view: 'about'
+			view: 'work'
 		}
 	},
 	changeView: function(view) {
