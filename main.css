@@ -106,7 +106,7 @@ nav li.true {
 	width: 50%;
 	border-radius: 7px;
 	box-shadow: 1px 1px 3px 1px rgba(0,0,0,.1);
-	background: url('/img/white_bg.png');
+	background: linear-gradient(148deg, #EEEEEE 0%, #D2E6ED 70%);
 }
 
 .portfolioItem .desc {
