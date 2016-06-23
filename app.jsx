@@ -123,12 +123,105 @@ var About = React.createClass({
 
 		return (
 			<div
-				className="aboutSection"
+				className="aboutSection aboutText"
 				dangerouslySetInnerHTML={markup()}>
 			</div>
 		)
 	}
 });
+
+var InstaPreview = React.createClass({
+	getInitialState: function() {
+		return {
+			data: {
+				link: '#',
+				images: {
+					standard_resolution: {
+						url: "/img/loading.gif"
+					}
+				}
+			}
+		}
+	},
+	componentDidMount: function() {
+		this.getLatestPost();
+	},
+	getLatestPost: function() {
+
+		var that = this;
+
+		$.ajax({
+			url: 'http://krish-api.herokuapp.com/api/insta',
+			async: true,
+			success: function(data) {
+				that.setState({
+					data: data 
+				});
+			}
+		})
+	},
+	render: function() {
+		return (
+			<div className="aboutSection insta">
+				<img className="logo" src='/img/insta.png' />
+				<a href={this.state.data.link}>
+					<img className="thumb" src={this.state.data.images.standard_resolution.url} />
+				</a>
+				<p className="caption">{this.state.data.caption}</p>
+			</div>
+		)
+	}
+});
+
+var LastFm = React.createClass({
+	getInitialState: function() {
+		return {
+			artist: 'Loading',
+			name: 'Loading',
+			img: '/img/loading.gif'
+		}
+	},
+	componentDidMount: function() {
+		this.getTrack();
+	},
+	getTrack: function() {
+
+		var that = this;
+
+		$.ajax({
+			url: 'http://krish-api.herokuapp.com/api/last',
+			async: true,
+			success: function(data) {
+
+				var img;
+
+				if (data.image[2]['#text'].length > 0) {
+					img = data.image[2]['#text'];
+				} else {
+					img = '/img/music.png'
+				}
+
+				that.setState({
+					artist: data.artist['#text'],
+					name: data.name,
+					img: img
+				});
+			}
+		})
+
+	},
+	render: function() {
+		return (
+			<div className="aboutSection last">
+				<img src={this.state.img} className="art" />
+				<div className="text">
+					<p className="name"><img className="eq" src="/img/eq.gif" /><strong> {this.state.name}</strong></p>
+					<p className="artist">{this.state.artist}</p>
+				</div>
+			</div>
+		)
+	}
+})
 
 var AboutPage = React.createClass({
 	componentWillMount: function() {
@@ -136,19 +229,26 @@ var AboutPage = React.createClass({
 	},
 	getContent: function() {
 		var that = this;
-		$.ajax({
-			url: '/about.html',
-			async: false,
-			success: function(conten) {
-				that.setState({
-					text: conten
-				});
-			}
+
+		var md = new Remarkable();
+
+		var rawContent = 'I\'m Krish Dholakiya -- I\'m a **designer**.' +
+		' I also dabble in entrepreneurship, music, and social justice.\n\n' +
+		'I co-founded **[slice.capital](http://slice.capital)**, ' +
+		'and also work part-time as a freelancer. I\'m always available (and eager) to talk; ' +
+		'feel free to email me at **krish@slice.capital**.';
+
+		that.setState({
+			text: md.render(rawContent)
 		});
 	},
 	render: function() {
 		return (
-			<About text={this.state.text} />
+			<div className="aboutContainer">
+				<About text={this.state.text} />
+				<InstaPreview />
+				<LastFm />
+			</div>
 		)
 	}
 });
@@ -156,7 +256,7 @@ var AboutPage = React.createClass({
 var ContainerItem = React.createClass({
 	getInitialState: function() {
 		return {
-			view: 'work'
+			view: 'about'
 		}
 	},
 	changeView: function(view) {

@@ -5,16 +5,13 @@ html {
 	height: 100%;
 	width: 100%;
 	margin: 0 auto;
-	background-image: url('/img/bg.png');
+	background-image: url('/img/bg.jpg');
 	background-attachment: fixed;
 	background-size: cover;
 }
 
 body {
 	font-family: San Francisco, sans-serif;
-	background-image: url('/img/bg.png');
-	background-attachment: fixed;
-	background-size: cover;
 	color: rgba(0,0,0,.8);
 	margin-top: 100px;
 	padding-bottom: 60px;
@@ -145,7 +142,7 @@ nav li.true {
     border-radius: 7px;
     background: linear-gradient(148deg, #EEEEEE 0%, #D2E6ED 100%);
     box-shadow: 1px 1px 3px 1px rgba(0,0,0,.1);
-    font-size: 1.3em;
+    font-size: 1.1em;
 }
 
 .aboutSection p {
@@ -165,6 +162,84 @@ nav li.true {
 
 .links:before {
 	content: '//';
+}
+
+.insta {
+	min-width: auto !important;
+	text-align: center;
+	padding: 0 !important;
+	width: 23%;
+}
+
+.insta .logo {
+	max-width: 115px;
+	width: 70%;
+	padding: 10px;
+}
+
+.insta .thumb {
+	max-width: 170px;
+	max-height: 170px;
+	width: 60%;
+	border-radius: 7px;
+	box-shadow: 1px 1px 3px 1px rgba(0,0,0,.2);
+	margin:0 auto;
+	display: block;
+}
+
+.aboutSection {
+	float: right;
+	margin: 10px;
+}
+
+.last {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+}
+
+.last .title {
+	margin: 5px 0px;
+}
+
+.last .art {
+	height: 100px;
+	border-radius: 7px;
+	box-shadow: 1px 1px 3px 1px rgba(0,0,0,.2);
+	display: inline-block;
+}
+
+.last .text {
+	display: inline-block;
+	vertical-align: bottom;
+	margin-left: 10px;
+}
+
+.last .name {
+	margin-bottom: 0 !important;
+	width: 90%;
+	white-space: nowrap;
+  	overflow-x: hidden;
+  	text-overflow: ellipsis;
+}
+
+.last .name .strong {
+	width: 100%;
+}
+
+.last .text p {
+	margin-top: 20px;
+	line-height: 0;
+}
+
+.last .eq {
+	width: 20px;
+	margin-right: 5px;
+}
+
+.aboutContainer {
+	width: 80%;
+	margin: 10px auto;
 }
 
 @media(max-width:1150px) {
@@ -217,9 +292,6 @@ nav li.true {
 		vertical-align: bottom;
 	}
 
-	.aboutSection {
-		width: 90%;
-	}
 }
 
 @media(max-width: 560px) {
@@ -234,13 +306,29 @@ nav li.true {
 		margin: 10px auto;
 	}
 
-	.aboutSection {
-		width: 100%;
-		margin-left: -3%;
+	.aboutContainer {
+		width: 110%;
+		margin-left: -7%;
 	}
 
-	.aboutSection p {
-		width: 85%;
+	.aboutText p {
+		width: 80%;
+	}
+
+	.aboutSection {
+		display: block;
+		float: none;
+		width: 100% !important;
+		margin-bottom: 40px;
+	}
+
+	.insta {
+		padding-bottom: 5px !important;
+		width: 30% !important;
+		min-width: 200px !important;
+		text-align: center;
+		margin: 10px auto;
+		margin-bottom: 40px;
 	}
 
 	.titleSection {
@@ -256,4 +344,11 @@ nav li.true {
 		margin-top: 20px;
 	}
 }
+
+@media(max-width: 400px) {
+	.last {
+		font-size: .8em;
+	}
+}
+
 
