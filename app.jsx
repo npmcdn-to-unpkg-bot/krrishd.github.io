@@ -203,7 +203,13 @@ var LastFm = React.createClass({
 
 				that.setState({
 					artist: data.artist['#text'],
-					name: data.name,
+					name: (function() {
+						if (data.name.length <= 20) {
+							return data.name;
+						}
+
+						return data.name.substring(0,20) + '...'
+					})(),
 					img: img
 				});
 			}

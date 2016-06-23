@@ -217,10 +217,6 @@ nav li.true {
 
 .last .name {
 	margin-bottom: 0 !important;
-	width: 90%;
-	white-space: nowrap;
-  	overflow-x: hidden;
-  	text-overflow: ellipsis;
 }
 
 .last .name .strong {
