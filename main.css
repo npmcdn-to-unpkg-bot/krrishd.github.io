@@ -349,6 +349,12 @@ nav li.true {
 	.last {
 		font-size: .8em;
 	}
+
+	html {
+		background-image: url('/img/light_bg.jpg');
+		background-attachment: initial;
+		background-size: cover;
+	}
 }
 
 
