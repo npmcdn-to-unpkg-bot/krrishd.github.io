@@ -34,12 +34,6 @@ var PortfolioPage = React.createClass({
 			items_raw: {
 				"data": [
 					{
-						"title": "Sitrus Clothing",
-						"url": "http://sitrusclothing.com",
-						"img": "/img/sitrus.png",
-						"desc": "An eCommerce website + brand identity work. Built using WooCommerce."
-					},
-					{
 						"title": "Slice Capital",
 						"url": "http://www.slice.capital",
 						"img": "/img/slice.png",
