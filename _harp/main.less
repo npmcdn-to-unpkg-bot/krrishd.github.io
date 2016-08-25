@@ -75,3 +75,29 @@ footer {
 		content: "";
 	}
 }
+
+@media(max-width: 575px) {
+	body {
+		h1 {
+			&.name {
+				font-size: 3.5em;
+			}
+		}
+	}
+
+	.about, .contact {
+		font-size: 1em;
+	}
+}
+
+@media(max-width: 420px) {
+	.about, .contact {
+		min-width: 200px;
+		p {
+			margin-left: -5%;
+		}
+	}
+	footer {
+		font-size: .8em;
+	}
+}
