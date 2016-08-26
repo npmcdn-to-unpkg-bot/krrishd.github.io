@@ -45,7 +45,11 @@ var MusicSection = React.createClass({
 				null,
 				'Now Playing'
 			),
-			React.createElement('img', { src: this.state.img, className: 'art' }),
+			React.createElement(
+				'div',
+				{ className: 'gradient' },
+				React.createElement('img', { src: this.state.img, className: 'art', 'cross-origin': 'anonymous' })
+			),
 			React.createElement(
 				'div',
 				{ className: 'text' },

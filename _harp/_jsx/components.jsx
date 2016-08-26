@@ -38,7 +38,9 @@ var MusicSection = React.createClass({
 		return (
 			<div className="music">
 				<h2>Now Playing</h2>
-				<img src={this.state.img} className="art" />
+				<div className="gradient">
+					<img src={this.state.img} className="art" cross-origin="anonymous" />
+				</div>
 				<div className="text">
 					<p className="name"><img className="eq" src="/img/eq.gif" /><strong> {this.state.name}</strong></p>
 					<p className="artist">{this.state.artist}</p>
